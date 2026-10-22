@@ -1,0 +1,8 @@
+site_name: sysml-v2-rulecheck
+site_description: Planteamiento del Proyecto 7 de Digitalización de Ingeniería de Sistemas Complejos
+docs_dir: docs
+theme:
+  name: mkdocs
+nav:
+  - Inicio: index.md
+  - Planteamiento: 00-planteamiento.md
