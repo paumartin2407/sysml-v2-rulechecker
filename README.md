@@ -16,16 +16,3 @@ Desarrollar y evaluar una herramienta de análisis de modelos SysML v2 que detec
 
 - [Planteamiento de la investigación](docs/00-planteamiento.md).
 - **Página web de la entrega:** [https://paumartin2407.github.io/sysml-v2-rulechecker/](https://paumartin2407.github.io/sysml-v2-rulechecker/).
-
-La página se genera automáticamente a partir de `docs/` con MkDocs y GitHub Actions. El workflow comprueba la construcción también en cada pull request y publica desde `main`.
-
-## Pasos para convertir este borrador en la entrega de la Actividad 0
-
-1. Acordar en el grupo el nombre, la hipótesis, el caso de estudio y los umbrales; ajustar el borrador a esas decisiones.
-2. Crear el repositorio de GitHub, dar acceso al profesor y subir estos archivos a `main`.
-3. En **Settings → Pages**, seleccionar **GitHub Actions** como fuente de publicación. Comprobar la página y añadir su URL real arriba.
-4. Presentar los objetivos al profesor y subir los cambios acordados. Registrar OE1–OE4 como milestones o épicas.
-5. Después de la validación en clase, crear la etiqueta `v0.1-planteamiento` sobre la versión acordada de `main`.
-6. Completar para la siguiente revisión el estado de la cuestión: consultar dos bases bibliográficas, comprobar los DOI o URL, leer en grupo al menos tres trabajos cercanos y añadir las búsquedas, la comparación y las referencias.
-
-No se sube una ficha a AulaGlobal: el repositorio y su página publicada constituyen la entrega indicada en el enunciado.
