@@ -15,7 +15,7 @@ Desarrollar y evaluar una herramienta de análisis de modelos SysML v2 que detec
 ## Documentación
 
 - [Planteamiento de la investigación](docs/00-planteamiento.md).
-- **Página web de la entrega:** completar aquí la URL real de GitHub Pages cuando esté publicada.
+- **Página web de la entrega:** [https://paumartin2407.github.io/sysml-v2-rulechecker/](https://paumartin2407.github.io/sysml-v2-rulechecker/).
 
 La página se genera automáticamente a partir de `docs/` con MkDocs y GitHub Actions. El workflow comprueba la construcción también en cada pull request y publica desde `main`.
 
