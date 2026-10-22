@@ -1,4 +1,4 @@
-# sysml-v2-rulecheck
+# sysml-v2-rulechecker
 
 Propuesta de la Actividad 0 de **Digitalización de Ingeniería de Sistemas Complejos** (UC3M, curso 2026-2027). Este repositorio plantea una herramienta de revisión de modelos SysML v2 mediante reglas reproducibles y explicaciones basadas en la evidencia de los hallazgos.
 

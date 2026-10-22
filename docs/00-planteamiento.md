@@ -1,4 +1,4 @@
-# sysml-v2-rulecheck
+# sysml-v2-rulechecker
 
 **Digitalización de Ingeniería de Sistemas Complejos · UC3M**  
 **Proyecto 7:** verificación y validación inteligente de modelos SysML v2  
@@ -7,8 +7,8 @@
 
 | Campo | Nuestra propuesta |
 |---|---|
-| Títulos candidatos | `sysml-v2-rulecheck`; `sysml-v2-quality-checker`; `sysml-v2-tracecheck` |
-| Nombre elegido | `sysml-v2-rulecheck`: indica que la herramienta comprueba reglas concretas. |
+| Títulos candidatos | `sysml-v2-rulechecker`; `sysml-v2-quality-checker`; `sysml-v2-tracecheck` |
+| Nombre elegido | `sysml-v2-rulechecker`: indica que la herramienta comprueba reglas concretas. |
 | Área | Ingeniería de sistemas basada en modelos (MBSE). |
 | Tema | Herramienta para revisar modelos SysML v2 con reglas y explicar los problemas detectados con ayuda de IA. |
 | Síntoma | Al revisar un modelo pueden pasar desapercibidas referencias incorrectas o relaciones que faltan entre requisitos, componentes y pruebas. |
