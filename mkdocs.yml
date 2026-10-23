@@ -6,3 +6,4 @@ theme:
 nav:
   - Inicio: index.md
   - Planteamiento: 00-planteamiento.md
+  - Requisitos: 01-requisitos.md

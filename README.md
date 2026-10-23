@@ -15,4 +15,5 @@ Desarrollar y evaluar una herramienta de análisis de modelos SysML v2 que detec
 ## Documentación
 
 - [Planteamiento de la investigación](docs/00-planteamiento.md).
+- [Requisitos de la aplicación](docs/01-requisitos.md).
 - **Página web de la entrega:** [https://paumartin2407.github.io/sysml-v2-rulechecker/](https://paumartin2407.github.io/sysml-v2-rulechecker/).
