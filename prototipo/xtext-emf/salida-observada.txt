@@ -1,0 +1,67 @@
+=== valido ===
+LIBRARY=94
+FILE=dron.sysml
+ELEMENT=PartUsage|dron|2:19
+ELEMENT=RequirementUsage|autonomia|3:34
+SAT=RequirementUsage:Dron::autonomia|PartUsage:Dron::dron|4:61
+ELEMENT=VerificationCaseUsage|pruebaAutonomia|5:92
+VERIFY=RequirementUsage:Dron::autonomia|case=VerificationCaseUsage:Dron::pruebaAutonomia|6:143
+STDERR: log4j:WARN No appenders could be found for logger (org.eclipse.xtext.parser.antlr.AbstractInternalAntlrParser).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+COMPROBACION=OK
+=== multifichero ===
+LIBRARY=94
+FILE=ensayo.sysml
+SAT=RequirementUsage:ModeloDron::autonomia|PartUsage:ModeloDron::dron|3:59
+ELEMENT=VerificationCaseUsage|pruebaAutonomia|4:90
+VERIFY=RequirementUsage:ModeloDron::autonomia|case=VerificationCaseUsage:EnsayoDron::pruebaAutonomia|4:133
+FILE=modelo.sysml
+ELEMENT=PartUsage|dron|2:25
+ELEMENT=RequirementUsage|autonomia|3:40
+STDERR: log4j:WARN No appenders could be found for logger (org.eclipse.xtext.parser.antlr.AbstractInternalAntlrParser).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+COMPROBACION=OK
+=== invalido ===
+LIBRARY=94
+FILE=dron.sysml
+ISSUE=ERROR|org.eclipse.xtext.diagnostics.Diagnostic.Linking|4:26|Couldn't resolve reference to Element 'dronInexistente'.
+ISSUE=WARNING|validateBindingConnectorTypeConformance|4:26|Bound features should have conforming types
+ELEMENT=PartUsage|dron|2:19
+ELEMENT=RequirementUsage|autonomia|3:34
+SAT=RequirementUsage:Dron::autonomia|PROXY|4:61
+ELEMENT=VerificationCaseUsage|pruebaAutonomia|5:103
+VERIFY=RequirementUsage:Dron::autonomia|case=VerificationCaseUsage:Dron::pruebaAutonomia|5:146
+STDERR: log4j:WARN No appenders could be found for logger (org.eclipse.xtext.parser.antlr.AbstractInternalAntlrParser).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+COMPROBACION=OK
+=== dependencia-ausente ===
+LIBRARY=94
+FILE=ensayo.sysml
+ISSUE=ERROR|org.eclipse.xtext.diagnostics.Diagnostic.Linking|2:20|Couldn't resolve reference to Namespace 'ModeloDron'.
+ISSUE=ERROR|org.eclipse.xtext.diagnostics.Diagnostic.Linking|3:13|Couldn't resolve reference to Feature 'autonomia'.
+ISSUE=ERROR|org.eclipse.xtext.diagnostics.Diagnostic.Linking|3:26|Couldn't resolve reference to Element 'dron'.
+ISSUE=ERROR|org.eclipse.xtext.diagnostics.Diagnostic.Linking|4:55|Couldn't resolve reference to Feature 'autonomia'.
+ISSUE=ERROR|validateSatisfyRequirementUsageReference|3:13|Must reference a requirement.
+ISSUE=ERROR|validateAssertConstraintUsageReference|3:13|Must reference a constraint.
+ISSUE=WARNING|validateBindingConnectorTypeConformance|3:26|Bound features should have conforming types
+SAT=SatisfyRequirementUsage:null|PROXY|3:59
+ELEMENT=VerificationCaseUsage|pruebaAutonomia|4:90
+VERIFY=RequirementUsage:null|case=VerificationCaseUsage:EnsayoDron::pruebaAutonomia|4:133
+STDERR: log4j:WARN No appenders could be found for logger (org.eclipse.xtext.parser.antlr.AbstractInternalAntlrParser).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+COMPROBACION=OK
+=== sin-verificacion ===
+LIBRARY=94
+FILE=dron.sysml
+ELEMENT=PartUsage|dron|2:19
+ELEMENT=RequirementUsage|autonomia|3:34
+SAT=RequirementUsage:Dron::autonomia|PartUsage:Dron::dron|4:61
+ELEMENT=VerificationCaseUsage|pruebaAutonomia|5:92
+STDERR: log4j:WARN No appenders could be found for logger (org.eclipse.xtext.parser.antlr.AbstractInternalAntlrParser).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+COMPROBACION=OK

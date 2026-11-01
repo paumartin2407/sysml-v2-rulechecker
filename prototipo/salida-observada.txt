@@ -1,0 +1,54 @@
+
+=== dependencia-ausente ===
+Saving C:\Users\pauma\Documents\ChatGPT\Dig Ing Sis\sysmlprobe_ftb2b_vj\dependencia-ausente...
+Transforming...
+Processing
+Writing C:\Users\pauma\Documents\ChatGPT\Dig Ing Sis\sysmlprobe_ftb2b_vj\dependencia-ausente.json...
+log4j:WARN No appenders could be found for logger (org.eclipse.xtext.parser.antlr.AbstractInternalAntlrParser).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+elemento VerificationCaseUsage 'pruebaAutonomia' extremos {}
+elemento RequirementVerificationMembership None extremos {'source': [{'@id': 'd1cbb1ca-5e2f-4d53-8677-cb43845650e2'}], 'target': [{'@id': '1e756229-dd51-45aa-b334-d67e31e67e24'}]}
+elemento ReferenceUsage 'autonomia' extremos {}
+elemento ReferenceUsage 'dron' extremos {}
+Total: 16 objetos; los identificadores pueden variar entre ejecuciones.
+
+=== invalido ===
+Saving C:\Users\pauma\Documents\ChatGPT\Dig Ing Sis\sysmlprobe_ftb2b_vj\invalido...
+Transforming...
+ProcessingError: java.lang.NullPointerException: Cannot invoke "org.eclipse.emf.ecore.resource.Resource.getContents()" because the return value of "org.omg.sysml.lang.sysml.Element.eResource()" is null
+log4j:WARN No appenders could be found for logger (org.eclipse.xtext.parser.antlr.AbstractInternalAntlrParser).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+No se produjo JSON; el código de salida no garantiza éxito.
+
+=== multifichero ===
+Saving C:\Users\pauma\Documents\ChatGPT\Dig Ing Sis\sysmlprobe_ftb2b_vj\multifichero...
+Transforming...
+Processing
+Writing C:\Users\pauma\Documents\ChatGPT\Dig Ing Sis\sysmlprobe_ftb2b_vj\multifichero.json...
+log4j:WARN No appenders could be found for logger (org.eclipse.xtext.parser.antlr.AbstractInternalAntlrParser).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+elemento RequirementUsage 'autonomia' extremos {}
+elemento ReferenceUsage 'dron' extremos {}
+elemento ReferenceUsage 'autonomia' extremos {}
+elemento RequirementVerificationMembership None extremos {'source': [{'@id': 'e9ff7d0c-ff48-486d-86ad-8214bc490eae'}], 'target': [{'@id': '4d1e4e1c-8d59-40ec-b033-38fa31ca2293'}]}
+elemento VerificationCaseUsage 'pruebaAutonomia' extremos {}
+elemento PartUsage 'dron' extremos {}
+Total: 23 objetos; los identificadores pueden variar entre ejecuciones.
+
+=== valido ===
+Saving C:\Users\pauma\Documents\ChatGPT\Dig Ing Sis\sysmlprobe_ftb2b_vj\valido...
+Transforming...
+Processing
+Writing C:\Users\pauma\Documents\ChatGPT\Dig Ing Sis\sysmlprobe_ftb2b_vj\valido.json...
+log4j:WARN No appenders could be found for logger (org.eclipse.xtext.parser.antlr.AbstractInternalAntlrParser).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+elemento VerificationCaseUsage 'pruebaAutonomia' extremos {}
+elemento PartUsage 'dron' extremos {}
+elemento RequirementUsage 'autonomia' extremos {}
+elemento SatisfyRequirementUsage None extremos {}
+elemento RequirementVerificationMembership None extremos {'source': [{'@id': '6fa5daf4-dc7f-4c1a-a758-5afc749f3be1'}], 'target': [{'@id': '7b8195f6-c33c-4289-875a-0219b2a203de'}]}
+Total: 24 objetos; los identificadores pueden variar entre ejecuciones.
