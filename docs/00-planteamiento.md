@@ -59,7 +59,31 @@ Usaremos OE1–OE4 también en los hitos o épicas de GitHub y, más adelante, e
 
 ## Estado de la cuestión preliminar
 
-Pendiente de completar por el grupo. Se añadirán las búsquedas, la comparación de trabajos y las referencias para su revisión en la siguiente sesión.
+**Cómo buscamos (22/10/2026).** Empezamos por validación de SysML v2 y después buscamos trabajos sobre IA y herramientas disponibles. Consultamos registros de IEEE Xplore y Wiley/INCOSE mediante búsquedas web limitadas a sus dominios; no usamos la búsqueda avanzada de esas bases. Elegimos cuatro artículos y dos herramientas relacionados con el problema. Cada código B1–B6 conecta una búsqueda con una fila de la comparación.
+
+| ID | Fuente y consulta realizada | Trabajo obtenido |
+|---|---|---|
+| B1 | IEEE Xplore: `site:ieeexplore.ieee.org "SysML v2" validation metamodel`; [registro editorial](https://ieeexplore.ieee.org/document/11077130/). | Cibrián et al. (2025). |
+| B2 | Búsqueda por título: `"Automated Semantic Fault Localization in SysML v2" Al-Shami`; [portal de Aalto](https://research.aalto.fi/en/publications/automated-semantic-fault-localization-in-sysml-v2-a-human-in-the-/) y [registro en Wiley/INCOSE](https://incose.onlinelibrary.wiley.com/doi/10.1002/iis2.70189). | Al-Shami et al. (2026). |
+| B3 | Búsqueda por título: `"AI-Driven Consistency of SysML Diagrams" Sultan Apvrille MODELS 2024`; [texto de los autores](https://perso.telecom-paristech.fr/apvrille/docs/models2024_sultan.pdf), con referencia a la publicación en ACM. | Sultan y Apvrille (2024). |
+| B4 | Wiley/INCOSE: `site:incose.onlinelibrary.wiley.com "Verification and Validation of SysML Models" Hecht Chen`; [registro editorial](https://incose.onlinelibrary.wiley.com/doi/full/10.1002/j.2334-5837.2021.00857.x). | Hecht y Chen (2021). |
+| B5 | GitHub: `site:github.com/Systems-Modeling/SysML-v2-Pilot-Implementation SysML v2 pilot`; [repositorio](https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation). | Implementación piloto de SysML v2. |
+| B6 | Zenodo: `site:zenodo.org/records "Pattern-Based Validation of SysML v2 Models with Refinery"`; [artefacto, versión 2](https://zenodo.org/records/19297800). | Bajczi y Tóth (2026). |
+
+**Comparación de trabajos.**
+
+La tabla resume qué aporta cada trabajo y qué queda por explorar en nuestra propuesta.
+
+| Trabajo | Enfoque | Estándares o lenguaje | Relación con nuestro problema | DOI o URL |
+|---|---|---|---|---|
+| **B1** Cibrián et al. (2025), *Ensuring Semantic Consistency in SysML v2 Models Through Metamodel-Driven Validation* | Comprueba modelos con reglas derivadas del metamodelo y sugiere correcciones de erratas en atributos. | SysML v2. | Ya detecta errores de modelo. Queremos estudiar avisos de trazabilidad, explicarlos con evidencia y medir si ayudan a revisar más rápido. | [10.1109/ACCESS.2025.3587786](https://doi.org/10.1109/ACCESS.2025.3587786) |
+| **B2** Al-Shami et al. (2026), *Automated Semantic Fault Localization in SysML v2* | Entrena un modelo de lenguaje para localizar fallos y proponer cambios. | SysML v2. | Estudia sobre todo fallos de interfaces creados para la evaluación. Nosotros partimos de reglas explícitas y no entrenaremos un modelo de reparación. | [10.1002/iis2.70189](https://doi.org/10.1002/iis2.70189) |
+| **B3** Sultan y Apvrille (2024), *AI-Driven Consistency of SysML Diagrams* | Combina reglas e IA para detectar y corregir diferencias entre diagramas. | SysML, diagramas de casos de uso y bloques. | Trabaja con diagramas gráficos; nuestra propuesta se centra en modelos textuales SysML v2 y en explicar avisos producidos por reglas. | [10.1145/3640310.3674079](https://doi.org/10.1145/3640310.3674079) |
+| **B4** Hecht y Chen (2021), *Verification and Validation of SysML Models* | Propone adaptar a cada proyecto una lista de comprobaciones manuales y automáticas. | SysML. | Nos sirve como antecedente para elegir reglas; evaluaremos una herramienta concreta sobre SysML v2. | [10.1002/j.2334-5837.2021.00857.x](https://doi.org/10.1002/j.2334-5837.2021.00857.x) |
+| **B5** Implementación piloto de SysML v2, OMG Systems Modeling Community | Ofrece herramientas del lenguaje y modelos de ejemplo. | SysML v2 y KerML. | Debemos comprobar qué errores detecta ya y si podemos aprovechar su lectura de modelos. | [Repositorio](https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation) |
+| **B6** Bajczi y Tóth (2026), *Pattern-Based Validation of SysML v2 Models with Refinery* | Aplica patrones de validación a modelos obtenidos mediante la API. | SysML v2 API. | Es la herramienta más cercana para comparar nuestras reglas. Debemos revisar también cómo muestra la evidencia y si evalúa su utilidad para usuarios. | [10.5281/zenodo.19297800](https://doi.org/10.5281/zenodo.19297800) |
+
+**Diferencia que queremos comprobar.** Proponemos unir reglas claras, avisos con evidencia y explicaciones de IA, y comprobar con personas si eso ayuda frente a una revisión manual. Afinaremos esta idea cuando el grupo lea los trabajos más próximos.
 
 ## Propuesta técnica inicial
 
